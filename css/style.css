@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600;700&display=swap');
-
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
@@ -21,6 +19,10 @@
     color: var(--main-color);
 }
 
+.neutral-star{
+    color: var(--main-bg-color);
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -34,7 +36,6 @@ body {
 }
 
 .section-title {
-    margin: 0;
     font-size: 22px;
 }
 
@@ -61,6 +62,197 @@ body {
     color: var(--main-bg-color)
 }
 
+h1{
+    font-weight: 700;
+    font-size: 1.375em;
+}
+
+h2, h3{
+    font-weight: 700;
+    font-size: 1.375em;
+}
+
+p, a{
+    font-weight: 400;
+    font-size: 1em;
+}
+
+/******* Header *******/
+
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    height: 44px;
+}
+.top a{
+    align-self: flex-end;
+}
+
+/******* Logo *******/
+
+.logo{
+    height: 19px;
+    display: flex;
+}
+
+/******* Menu *******/
+
+nav{
+    height: 33px;
+    display: flex;
+    flex-flow: nowrap row;
+}
+
+nav a{
+    margin-left: 69px;
+    height: 33px;
+    padding-top: 14px;
+    border-top: 2px solid transparent; 
+}
+nav a:hover{
+    color: #0065FC;
+    border-top-color: #0065FC;
+    transition: .5s;
+}
+
+.nav a:active{
+    border-top-width: thick;
+    border-top-color: #0065FC;
+}
+
+/******* Title *******/
+header h1{
+    margin-top: 60px;
+}
+
+.page_title p{
+    margin-top: 8px;
+}
+
+/******* Search box *******/
+
+.search_box{
+    margin-top: 35px;
+    height: 49px;
+    width: 377px;
+    border: solid 2px #F2F2F2;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: nowrap row;
+    align-items: flex-start;
+
+}
+
+form{
+    font-size: 1.125em;
+    font-weight: 700;
+}
+
+label{
+    width: 50px;
+    height: 49px;
+    background-color: #F2F2F2;
+    display: inline-block;
+    border-radius: 15px 0 0 15px;
+    border: none;
+}
+
+.fa-location-dot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 16px;
+}
+
+/******* Input *******/
+
+.search_text{
+    box-sizing: content-box;
+    height: 49px;
+    width: 180px;
+    outline: none;
+    box-sizing: content-box;
+    border: none;
+}
+
+/******* Rechercher *******/
+
+.btn{
+    padding: 14px 16px;
+    width: 132px;
+    height: 49px;
+    border: none;
+    border-radius: 0  15px 15px 0;
+    background-color: #0065FC;
+    color: #FFF;
+    cursor: pointer;
+}
+
+/******* Filters *******/
+
+.filter_box{
+    margin: 37.5px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 758px;
+}
+
+.filter{
+    border: solid 2px #D9D9D9;
+    height: 50px;
+    padding: 0 19px ;
+    border-radius: 25px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.063em;
+}
+
+.filter:hover{
+    background-color: #DEEBFF;
+}
+
+.filter:active{
+    background-color: #DEEBFF;
+}
+
+.filter i{
+    margin-right: 14.56px;
+    font-size: 1.1em;
+}
+
+/******* i *******/
+
+.infos{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 37.5px;
+}
+
+.fa-info{
+    border: solid 1px #F2F2F2;
+    border-radius: 50px;
+    margin-right: 10px;
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.fa-info:before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+}
+
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -79,6 +271,50 @@ body {
     width: 65%;
 }
 
+.hebergements-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hebergements-cards{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+}
+
+.hebergements-cards img {
+    width: 100%;
+    height: 136px;
+    border-radius: 20px 20px 0 0;
+}
+
+.hebergements-cards .card {
+    margin-top: 30px;
+    width: 31%;
+}
+
+.hebergements-cards .card-content {
+    width: 100%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergements-cards .card-rating{
+    margin-bottom: 5px;
+    margin-top: 8px;
+}
+
+.afficher_plus{
+    width: 100%;
+}
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -124,117 +360,12 @@ body {
     margin-bottom: 5px;
 }
 
-h1{
-    font-weight: 700;
-    font-size: 1.375em;
-}
 
-h2, h3{
-    font-weight: 700;
-    font-size: 1.125em;
-}
 
-p, a{
-    font-weight: 400;
-    font-size: 1em;
-}
 
-/***** EXO *****/
-/*  HEADER  */
 
-.top{
-    display: flex;
-    justify-content: space-between;
-    height: 44px;
-}
-.top a{
-    align-self: flex-end;
-}
 
- /*     LOGO    */
-.logo{
-    height: 19px;
-    display: flex;
-}
 
-/*      NAV     */
-nav{
-    height: 33px;
-    display: flex;
-    flex-flow: nowrap row;
-}
-
-nav a{
-    margin-left: 69px;
-    height: 33px;
-    padding-top: 14px;
-    border-top: 2px solid transparent; 
-}
-nav a:hover{
-    color: #0065FC;
-    border-top-color: #0065FC;
-    transition: .5s;
-}
-
-.nav a:active{
-    border-top-width: thick;
-    border-top-color: #0065FC;
-}
-
-/*      TITLE       */
-header h1{
-    margin-top: 60px;
-}
-
-header p{
-    margin-top: 8px;
-}
-
-/*      SEARCH      */
-
-.search_box{
-    height: 49px;
-    width: 377px;
-    margin: 35px 0;
-    border: solid 2px #F2F2F2;
-    border-radius: 15px;
-}
-
-/*      FILTER      */
-
-.filter_box{
-    width: 767px;
-    display: flex;
-    flex-flow: wrap row;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 35px;
-}
-
-.filter{
-    width: auto;
-    height: 50px;
-    border: solid 2px #F2F2F2;
-    border-radius: 25px;
-    display: flex;
-    flex-flow: nowrap row;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin-left: 15px;
-}
-
-.filter h2{
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin: 0 15px;
-    font-size: 1.063em;
-}
-
-.filter .fa-solid{
-    margin-right: 5px;
-}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
