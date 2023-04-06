@@ -1,4 +1,4 @@
-/****** General ***********/
+/******* General  *******/
 * {
     font-family: 'Raleway', sans-serif;
     color: inherit;
@@ -77,7 +77,7 @@ p, a{
     font-size: 1em;
 }
 
-/******* Header *******/
+/*******  Header  *******/
 
 
 .top{
@@ -89,14 +89,14 @@ p, a{
     align-self: flex-end;
 }
 
-/******* Logo *******/
+/*******  Logo  *******/
 
 .logo{
     height: 19px;
     display: flex;
 }
 
-/******* Menu *******/
+/*******  Menu  *******/
 
 nav{
     height: 33px;
@@ -121,7 +121,7 @@ nav a:hover{
     border-top-color: #0065FC;
 }
 
-/******* Title *******/
+/*******  Title  *******/
 header h1{
     margin-top: 60px;
 }
@@ -130,7 +130,7 @@ header h1{
     margin-top: 8px;
 }
 
-/******* Search box *******/
+/*******  Search box  *******/
 
 .search_box{
     margin-top: 35px;
@@ -165,7 +165,7 @@ label{
     padding: 14px 16px;
 }
 
-/******* Input *******/
+/*******  Input  *******/
 
 .search_text{
     box-sizing: content-box;
@@ -176,7 +176,7 @@ label{
     border: none;
 }
 
-/******* Rechercher *******/
+/*******  Rechercher  *******/
 
 .btn{
     padding: 14px 16px;
@@ -189,7 +189,7 @@ label{
     cursor: pointer;
 }
 
-/******* Filters *******/
+/*******  Filters  *******/
 
 .filter_box{
     margin: 37.5px 0;
@@ -225,7 +225,7 @@ label{
     font-size: 1.1em;
 }
 
-/******* i *******/
+/*******  i  *******/
 
 .infos{
     display: flex;
@@ -253,7 +253,7 @@ label{
 }
 
 
-/****** Hebergements And Populaires ***********/
+/*******  Hebergements And Populaires  *******/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -266,7 +266,7 @@ label{
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/*******  Hebergements  *******/
 .hebergements {
     width: 65%;
 }
@@ -315,7 +315,7 @@ label{
 .afficher_plus{
     width: 100%;
 }
-/****** Populaires ***********/
+/*******  Populaires  *******/
 .populaires {
     width: 32%;
 }
@@ -361,14 +361,37 @@ label{
 }
 
 
+/*******  Footer  *******/
 
+footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-flow: nowrap row;
+    padding-bottom: 20px;
+    margin-top: 60px;
+}
 
+footer div{
+    display: flex;
+    flex-flow: nowrap column;
+    width: 33%;
+    margin: 0 20px;
+}
 
+footer div a{
+    font-size: 1.125em;
+    margin-top: 18px;
+}
 
+footer div h3{
+    font-weight: 700;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
-/****** Media queries ***********/
+/******* Media queries *******/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
