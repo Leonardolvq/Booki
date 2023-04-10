@@ -69,7 +69,7 @@ h1{
 
 h2, h3{
     font-weight: 700;
-    font-size: 1.125em;
+    font-size: 1.1em;
 }
 
 p, a{
@@ -122,7 +122,8 @@ nav a:hover{
 }
 
 /*******  Title  *******/
-header h1{
+
+.info-group h1{
     margin-top: 60px;
 }
 
@@ -132,61 +133,65 @@ header h1{
 
 /*******  Search box  *******/
 
-.search_box{
-    margin-top: 35px;
-    height: 49px;
-    width: 377px;
-    border: solid 2px #F2F2F2;
-    border-radius: 15px;
-    display: flex;
-    flex-flow: nowrap row;
-    align-items: flex-start;
-
+.search-box{
+    margin: 35px 0;  
 }
 
 form{
-    font-size: 1.125em;
-    font-weight: 700;
+    height: 50px;
+    width: 377px;
+    border: black 1px solid;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    border: var(--main-bg-color) 2px solid;
 }
+
+
+/*******  Icon  *******/
 
 label{
     width: 50px;
-    height: 49px;
-    background-color: #F2F2F2;
-    display: inline-block;
-    border-radius: 15px 0 0 15px;
-    border: none;
-}
-
-.fa-location-dot{
+    height: 50px;
+    background-color: var(--main-bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 14px 16px;
+    border-radius:  15px 0 0 15px;
+    position: relative;
+    top: -2px
 }
 
-/*******  Input  *******/
+/*******  Text  *******/
 
-.search_text{
-    box-sizing: content-box;
-    height: 49px;
-    width: 180px;
-    outline: none;
-    box-sizing: content-box;
+.search-text{
+    width: 195px;
+    margin: 0 -2px;
     border: none;
 }
 
-/*******  Rechercher  *******/
+input[placeholder="Marseille, France"]{
+    font-size: 1em;
+    font-weight: 700;
+    padding-left: 20px;
+}
+/*******  Button  *******/
 
 .btn{
-    padding: 14px 16px;
     width: 132px;
-    height: 49px;
+    height: 50px;
     border: none;
-    border-radius: 0  15px 15px 0;
-    background-color: #0065FC;
+    background-color: var(--main-color);
+    border-radius: 0 15px 15px 0;
+    border: var(--main-color) 2px solid;
+    position: relative;
+    top: -2px
+}
+
+input[value="Rechercher"]{
+    font-size: 1em;
+    font-weight: 700;
     color: #FFF;
-    cursor: pointer;
 }
 
 /*******  Filters  *******/
@@ -212,6 +217,10 @@ label{
     align-items: center;
     cursor: pointer;
     font-size: 1.063em;
+}
+
+.filter_title{
+    width: auto;
 }
 
 .filter:hover{
@@ -382,7 +391,6 @@ label{
 
 .hebergements-and-populaires .activites{
     background-color: inherit;
-
 }
 
 .activites_cards{
@@ -418,7 +426,6 @@ footer{
     display: flex;
     flex-flow: nowrap row;
     padding-bottom: 20px;
-    margin-top: 60px;
 }
 
 footer div{
@@ -429,7 +436,6 @@ footer div{
 }
 
 footer div a{
-    font-size: 1.125em;
     margin-top: 18px;
 }
 
@@ -488,6 +494,13 @@ footer div a{
     .top a{
         align-self: flex-end;
     }
+
+    /*******  Filter  *******/
+
+    .filter_title{
+        width: 100%;
+    }
+
     /*******  Hebergements  *******/
 
     .hebergements-cards{
@@ -504,6 +517,21 @@ footer div a{
     }
     .populaires-cards .card{
         width: 100%;
+    }
+
+    /*******  Activités  *******/
+
+    .activites_cards{
+        width: 100%;
+        display: flex;
+        flex-flow: nowrap column;
+        justify-content: space-between;
+        margin: 30px 0;
+    }
+
+    .activites_cards .card{
+        width: 100%;
+        margin-bottom: 30px;
     }
 
     /*******  Footer  *******/
