@@ -51,7 +51,7 @@ body {
 }
 
 .card-title {
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .euro {
@@ -64,17 +64,17 @@ body {
 
 h1{
     font-weight: 700;
-    font-size: 1.375em;
+    font-size: 1.375rem;
 }
 
 h2, h3{
     font-weight: 700;
-    font-size: 1.1em;
+    font-size: 1.1rem;
 }
 
 p, a{
     font-weight: 400;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 /*******  Header  *******/
@@ -83,8 +83,9 @@ p, a{
 .top{
     display: flex;
     justify-content: space-between;
-    height: 44px;
+    height: 48px;
 }
+
 .top a{
     align-self: flex-end;
 }
@@ -93,7 +94,6 @@ p, a{
 
 .logo{
     height: 19px;
-    display: flex;
 }
 
 /*******  Menu  *******/
@@ -164,7 +164,7 @@ label{
 
 .fa-location-dot{
     color: black;
-    font-size: 1.125em;
+    font-size: 1.125rem;
 }
 
 /*******  Text  *******/
@@ -177,7 +177,7 @@ label{
 }
 
 input[placeholder="Marseille, France"]{
-    font-size: 1.125em;
+    font-size: 1.125rem;
     font-weight: 700;
     padding-left: 20px;
     color: black;;
@@ -187,20 +187,36 @@ input[placeholder="Marseille, France"]{
 .btn{
     width: 132px;
     height: 50px;
-    border: none;
-    background-color: var(--main-color);
-    border-radius: 0 15px 15px 0;
-    border: var(--main-color) 2px solid;
     position: relative;
     top: -2px;
     cursor: pointer;
-    letter-spacing: 0.08em
+    letter-spacing: 0.08rem;
+    border-radius: 0 15px 15px 0;
 }
 
 input[value="Rechercher"]{
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 600;
     color: #FFF;
+}
+
+.btn, .glass{
+    background-color: var(--main-color);
+    border: var(--main-color) 2px solid;
+}
+
+.glass{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -2px;
+    border-radius: 15px;
+    display: none;
+}
+
+.fa-magnifying-glass{
+    color: white;
+    font-size: 1rem;
 }
 
 
@@ -225,7 +241,7 @@ input[value="Rechercher"]{
     display: flex;
     align-items: center;
     cursor: pointer;
-    font-size: 1.063em;
+    font-size: 1.063rem;
 }
 
 .filter_title{
@@ -242,9 +258,12 @@ input[value="Rechercher"]{
 
 .filter i{
     margin-right: 14.56px;
-    font-size: 1.1em;
+    font-size: 1.1rem;
 }
-
+.btn-txt{
+    font-size: 1.125rem;
+    font-weight: 700;
+}
 /*******  i  *******/
 
 .infos{
@@ -267,7 +286,7 @@ input[value="Rechercher"]{
     justify-content: center;
     width: 24px;
     height: 24px;
-    font-size: 0.75em;
+    font-size: 0.75rem;
 }
 
 
@@ -324,7 +343,7 @@ input[value="Rechercher"]{
 
 .hebergements-cards .card-subtitle {
     margin: 0;
-    font-size: 0.875em;
+    font-size: 0.875rem;
     font-weight: 400;
 }
 
@@ -386,7 +405,7 @@ input[value="Rechercher"]{
 
 .populaires-cards .card-subtitle {
     margin: 0;
-    font-size: 0.875em;
+    font-size: 0.875rem;
 }
 
 .populaires-cards .card-rating {
@@ -424,7 +443,13 @@ input[value="Rechercher"]{
 }
 
 .activites_cards .card-content{
-    padding: 20px 19px 20px 19px;
+    height: 59px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    top: -5px;
 }
 
 /*******  Footer  *******/
@@ -455,6 +480,18 @@ footer div a{
 /******* Media queries *******/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    .filter_box{
+        gap: 10px;
+    }
+
+    .filter{
+        padding: 0 10px;
+    }
+    .filter_title{
+        width: 100%;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -479,11 +516,11 @@ footer div a{
     }
 
     .populaires-cards .card-title {
-        font-size: 0.875em;
+        font-size: 0.875rem;
     }
 
     .populaires-cards .card-subtitle {
-        font-size: 0.813em;
+        font-size: 0.813rem;
     }
 
     .activites_cards{
@@ -492,12 +529,12 @@ footer div a{
 
     .activites_cards .card{
         width: 22%;
-        height: auto;
+        height: 200px;
     }
 
     .activites_cards img{
         width: 100%;
-        height: 200px;
+        height: 141px;
     }
 
     
@@ -523,7 +560,7 @@ footer div a{
         align-items: center;
         justify-content: center;
         width: 100%;
-        height: auto;
+        height: 100px;
     }
 
     .top a{
@@ -541,14 +578,30 @@ footer div a{
         width: 100%;
         background-color: red;
         margin: 0;
+        height: 100px;
     }
 
     nav a{
         width: 50%;
         padding: 0 0 15px 0;
         margin: 0;
+        height: 0;
     }
     
+    /*******  Filter  *******/
+
+    .search-text{
+        width: 278px;
+    }
+
+    .btn{
+        display: none;
+    }
+
+    .glass{
+        display: inline;
+    }
+
     /*******  Filter  *******/
 
     .filter_title{
@@ -587,7 +640,8 @@ footer div a{
 
     /*******  Activités  *******/
     .hebergements-and-populaires .activites{
-        padding: 30px;
+        padding: 30px 30px 65px 30px;
+        margin-bottom: 0;
     }
 
     .activites_cards{
@@ -595,12 +649,12 @@ footer div a{
         display: flex;
         flex-flow: nowrap column;
         justify-content: space-between;
-        margin: 30px 0;
+        margin: 0;
     }
 
     .activites_cards .card{
         width: 100%;
-        margin-bottom: 30px;
+        margin-top: 30px;
     }
 
     /*******  Footer  *******/
@@ -609,7 +663,7 @@ footer div a{
         flex-direction: column;
     }
     footer div{
-        width: 100%;
+        width: auto;
     }
 
     .a_propos, .nos_hebergements{
