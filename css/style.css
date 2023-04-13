@@ -428,6 +428,7 @@ input[value="Rechercher"]{
     width: 100%;
     padding: 0;
     margin-bottom: 65px;
+    margin-top: 35px;
 }
 
 .activites_cards{
@@ -498,7 +499,7 @@ footer div a{
     }
 
     .filter{
-        padding: 0 13px;
+        padding-left: 19px;
     }
     .hebergements-and-populaires {
         flex-direction: column;
@@ -633,6 +634,9 @@ footer div a{
         width: 100%;
     }
 
+    .filter_box{
+        justify-content: space-between;
+    }
     .filter_box button{
         width: 47%;
     }
