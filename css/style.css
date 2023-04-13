@@ -452,7 +452,7 @@ input[value="Rechercher"]{
 
 .activites_cards .card-content{
     height: 59px;
-    padding: 0 20px;
+    padding-left: 20px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -493,15 +493,19 @@ footer div a{
         gap: 10px;
     }
 
-    .filter{
-        padding: 0 10px;
-    }
     .filter_title{
         width: 100%;
     }
 
+    .filter{
+        padding: 0 13px;
+    }
     .hebergements-and-populaires {
         flex-direction: column;
+    }
+
+    .hebergements-and-populaires .populaires{
+        margin: 0;
     }
 
     .hebergements {
@@ -604,6 +608,10 @@ footer div a{
         border-bottom: var(--main-color) 2px solid;
         transition: .3s;
     }
+
+    nav a:active{
+        border-bottom: var(--main-color) 2px solid;
+    }
     
     /*******  Filter  *******/
 
@@ -655,6 +663,7 @@ footer div a{
         border-radius: 0;
         margin-top: 0;
     }
+    
     .populaires-cards{
         flex-direction: column;
     }
