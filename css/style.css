@@ -278,10 +278,8 @@ input[value="Rechercher"]{
 
 .fa-info{
     border: solid 1px #F2F2F2;
-    border-radius: 50px;
+    border-radius: 100%;
     margin-right: 10px;
-    width: 24px;
-    height: 24px;
 }
 
 #fa-person{
