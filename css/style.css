@@ -135,36 +135,35 @@ nav a:hover{
 
 .search-box{
     margin: 35px 0;  
+    width: 377px;
 }
 
 form{
     height: 50px;
-    width: 377px;
+    width: 100%;
     border: black 1px solid;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     border-radius: 15px;
     border: var(--main-bg-color) 2px solid;
+    margin: 0;
 }
-
 
 /*******  Icon  *******/
 
-label{
-    width: 50px;
-    height: 50px;
+.search-box label{
     background-color: var(--main-bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius:  15px 0 0 15px;
+    border-radius:  12px 0 0 12px;
     position: relative;
-    top: -2px
 }
 
 .fa-location-dot{
     color: black;
     font-size: 1.125rem;
+    padding: 16px 18.25px;
 }
 
 /*******  Text  *******/
@@ -206,13 +205,13 @@ input[value="Rechercher"]{
 }
 
 .glass{
-    width: 50px;
-    height: 50px;
+    padding: 15px;
     position: relative;
     top: -2px;
     left: 2px;
     border-radius: 15px;
     display: none;
+    height: 50px;
 }
 
 .fa-magnifying-glass{
@@ -490,9 +489,6 @@ footer div a{
 /******* Media queries *******/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .search-box{
-        width: 100%;
-    }
 
     .search-text{
         width: 278px;
@@ -628,13 +624,21 @@ footer div a{
         border-bottom: var(--main-color) 2px solid;
     }
     
-    /*******  Filter  *******/
+    /*******  Rechercher  *******/
 
+    .search-box{
+        width: 100%;
+    }
+    
     .search-text{
-        width: 278px;
+        width: 100%;
     }
 
     .btn{
+        display: none;
+    }
+
+    input[value="Rechercher"]{
         display: none;
     }
 
@@ -692,7 +696,7 @@ footer div a{
     /*******  Activités  *******/
 
     .hebergements-and-populaires .activites{
-        padding: 30px 30px 65px 30px;
+        padding: 30px;
         margin-bottom: 0;
     }
 
