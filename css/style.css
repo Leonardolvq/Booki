@@ -51,7 +51,7 @@ body {
 }
 
 .card-title {
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 .euro {
@@ -64,17 +64,17 @@ body {
 
 h1{
     font-weight: 700;
-    font-size: 1.375rem;
+    font-size: 1.375em;
 }
 
 h2, h3{
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1.1em;
 }
 
 p, a{
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 .card-link {
@@ -170,7 +170,7 @@ form{
 
 .fa-location-dot{
     color: black;
-    font-size: 1.125rem;
+    font-size: 1.125em;
     padding: 16px 18.25px;
 }
 
@@ -184,7 +184,7 @@ form{
 }
 
 input[placeholder="Marseille, France"]{
-    font-size: 1.125rem;
+    font-size: 1.125em;
     font-weight: 700;
     padding-left: 20px;
     color: black;;
@@ -197,12 +197,12 @@ input[placeholder="Marseille, France"]{
     position: relative;
     top: -2px;
     cursor: pointer;
-    letter-spacing: 0.08rem;
+    letter-spacing: 0.08em;
     border-radius: 0 15px 15px 0;
 }
 
 input[value="Rechercher"]{
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: 600;
     color: #FFF;
     padding: 0 10px;
@@ -225,7 +225,7 @@ input[value="Rechercher"]{
 
 .fa-magnifying-glass{
     color: white;
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 /*******  Filters  *******/
@@ -249,7 +249,7 @@ input[value="Rechercher"]{
     display: flex;
     align-items: center;
     cursor: pointer;
-    font-size: 1.063rem;
+    font-size: 1.063em;
 }
 
 .filter_title{
@@ -266,11 +266,11 @@ input[value="Rechercher"]{
 
 .filter i{
     margin-right: 14.56px;
-    font-size: 1.1rem;
+    font-size: 1.1em;
 }
 
 .btn-txt{
-    font-size: 1.125rem;
+    font-size: 1.125em;
     font-weight: 700;
 }
 
@@ -289,7 +289,7 @@ input[value="Rechercher"]{
 }
 
 #fa-person{
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 
 .fa-info:before {
@@ -298,11 +298,12 @@ input[value="Rechercher"]{
     justify-content: center;
     width: 24px;
     height: 24px;
-    font-size: 0.75rem;
+    font-size: 0.75em;
 }
 
 
 /*******  Hebergements And Populaires  *******/
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -318,6 +319,7 @@ input[value="Rechercher"]{
 }
 
 /*******  Hebergements  *******/
+
 .hebergements {
     width: 65%;
 }
@@ -355,7 +357,7 @@ input[value="Rechercher"]{
 
 .hebergements-cards .card-subtitle {
     margin: 0;
-    font-size: 0.875rem;
+    font-size: 0.875em;
     font-weight: 400;
 }
 
@@ -369,14 +371,11 @@ input[value="Rechercher"]{
     margin-top: 8px;
 }
 
-.afficher_plus{
+.btn_plus{
     width: 100%;
-}
-
-
-.afficher_plus{
     margin-top: 30px;
 }
+
 
 /*******  Populaires  *******/
 
@@ -423,7 +422,7 @@ input[value="Rechercher"]{
 
 .populaires-cards .card-subtitle {
     margin: 0;
-    font-size: 0.875rem;
+    font-size: 0.875em;
 }
 
 .populaires-cards .card-rating {
@@ -518,7 +517,7 @@ footer div a{
 
     .filter i{
         margin-right: 11px;
-        font-size: 1.1rem;
+        font-size: 1.1em;
     }
 
     .hebergements-and-populaires {
@@ -549,11 +548,11 @@ footer div a{
     }
 
     .populaires-cards .card-title {
-        font-size: 0.875rem;
+        font-size: 0.875em;
     }
 
     .populaires-cards .card-subtitle {
-        font-size: 0.813rem;
+        font-size: 0.813em;
     }
 
     .activites_cards{
