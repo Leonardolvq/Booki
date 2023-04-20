@@ -131,7 +131,7 @@ nav a:hover{
 
 /*******  Title  *******/
 
-.info-group h1{
+.top h1{
     margin-top: 60px;
 }
 
@@ -580,7 +580,7 @@ footer div a{
         padding: 0;
     }
 
-    .info-group{
+    .top{
         padding: 0 20px;
     }
 
@@ -744,3 +744,4 @@ footer div a{
         margin: auto;
     }
 }
+
