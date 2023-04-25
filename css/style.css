@@ -26,6 +26,7 @@
 body {
     display: flex;
     justify-content: center;
+    max-width: 1440px;
 }
 
 .main-container {
@@ -119,14 +120,14 @@ nav a{
     border-top: 2px solid transparent; 
 }
 nav a:hover{
-    color: #0065FC;
-    border-top-color: #0065FC;
+    color: var(--main-color);
+    border-top-color: var(--main-color);
     transition: .3s;
 }
 
 .nav a:active{
     border-top-width: thick;
-    border-top-color: #0065FC;
+    border-top-color: var(--main-color);
 }
 
 /*******  Title  *******/
@@ -135,8 +136,9 @@ nav a:hover{
     margin-top: 60px;
 }
 
-.page_title p{
+.page_title h2{
     margin-top: 8px;
+    font-weight: 400;
 }
 
 /*******  Search box  *******/
@@ -166,6 +168,8 @@ form{
     align-items: center;
     border-radius:  12px 0 0 12px;
     position: relative;
+    cursor: pointer;
+
 }
 
 .fa-location-dot{
@@ -257,11 +261,11 @@ input[value="Rechercher"]{
 }
 
 .filter:hover{
-    background-color: #DEEBFF;
+    background-color: var(--filter-bg-color);
 }
 
 .filter:active{
-    background-color: #DEEBFF;
+    background-color: var(--filter-bg-color);
 }
 
 .filter i{
@@ -283,7 +287,7 @@ input[value="Rechercher"]{
 }
 
 .fa-info{
-    border: solid 1px #F2F2F2;
+    border: solid 1px var(--main-bg-color);
     border-radius: 100%;
     margin-right: 10px;
 }
@@ -394,6 +398,7 @@ input[value="Rechercher"]{
     margin-top: 33px;
     height: 144px;
 }
+
 .populaires-cards .card-link {
     display: flex;
     width: 100%;
